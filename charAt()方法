@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>charAt()方法</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			document.write("<h2>[1]"+"made in china".charAt(3)+"<br/>");
+			document.write("[2]"+"我国是美丽的国家".charAt(2)+"<br/>");
+			document.write("[3]"+"made in china".substring(2,4)+"<br/>");
+			document.write("[4]"+"我国是美丽的国家".substring(2,4)+"<br/>");
+			document.write("[5]"+"made in china".substring(2)+"<br/>");
+			document.write("[6]"+"made in korea".substring(4,2)+"<br/>");
+		</script>
+	</body>
+</html>
