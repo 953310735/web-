@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title>时钟特效</title>
+		<script type="text/javascript">
+			function disptime () {
+				var today=new Date();//获得当前时间
+				var hh=today.getHours();//获得当前小时
+				var mm=today.getMinutes();//获得当前分钟
+				var ss=today.getSeconds();//获得当前分钟
+				//设置div的内容为当前时间
+				document.getElementById("myclock").innerHTML=hh+":"+mm+"+"+ss;
+				/*
+				 * 使用setTimeout在函数disptime()体内再次调用setTimeout
+				 * 设置定时器每隔1秒（1000毫秒），调用函数disptime()执行，刷新时钟显示
+				 * var mytime=setTimeout("disptime()",1000);
+				 */
+			}
+			//使用setInterval()每间隔指定毫秒后调用disptime()
+			var mytime=setInterval("disptime()",1000);
+		
+		</script>
+	</head>
+	<body onload="disptime()">
+		
+		<div id="myclock">
+			
+		</div>
+	</body>
+</html>
