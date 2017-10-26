@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>image gallery</title>
+	</head>
+	<body>
+		<h1>snapshots</h1>
+		<ul>
+			<li>
+				<a href="../img/fireworks.jpg" title="a fireworks display">fireworks</a>
+			</li>
+			<li >
+				<a href="../img/coffee.jpg" title="a cup of black coffee">coffee</a>
+			</li>
+			<li>
+				<a href="../img/rose.jpg" title="a red,red rose">rose</a>
+			</li>
+			<li>
+				<a href="../img/big ben.jpg" title="the famous clock">big ben</a>
+			</li>
+			<img src="../img/placeholder.png" id="placeholder" alt="my image gallery"/>
+		</ul>
+		
+		<script type="text/javascript">
+			function showpic(whichpic){
+				var source=whichpic.getAttribute("href");
+				var placeholder=document.getElementById("placeholder");
+				placeholder.setAttribute("src",source);
+			}
+		</script>
+		
+	</body>
+</html>
