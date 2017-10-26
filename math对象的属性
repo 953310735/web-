@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title>math对象的属性</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			document.write("<h2>[1]E:"+Math.E+"<p>");
+			document.write("<h2>[2]LN2:"+Math.LN2+"<p>");
+			document.write("<h2>[3]LN10:"+Math.LN10+"<p>");
+			document.write("<h2>[4]SQRT1_2:"+Math.SQRT1_2+"<p>");//0.5的平方根
+			document.write("<h2>[5]SQRT2:"+Math.SQRT2+"<p>");//2的平方根
+			document.write("<h2>[6]PI:"+Math.PI+"<p>");
+		</script>
+	</body>
+</html>
