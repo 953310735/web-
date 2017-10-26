@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title>split方法</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var my_str1="made+in+china";
+			var my_str2=my_str1.split("+");
+			document.write(my_str2+"<br/>");
+			
+			var my_str3="made in china";
+			var my_str4=my_str3.split(" ");
+			document.write(my_str4);
+		</script>
+	</body>
+</html>
