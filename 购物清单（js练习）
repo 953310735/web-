@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>shopping list</title>
+	</head>
+	<body>
+		<h1>what to buy</h1>
+		<p title="a gentle reminder">Don't forget to buy this stuff.</p>
+		<ul id="purchases">
+			<li>a tin of bears</li>
+			<li class="sale">cheese</li>
+			<li class="sale important">milk</li>
+		</ul>
+		
+		<script type="text/javascript">
+			//getElementById示例
+			//  alert(typeof document.getElementById("purchases"));
+			
+			
+		/*	var items=document.getElementsByTagName("li");
+			for (var i = 0; i < items.length; i++) {
+				alert(typeof items[i]);
+			} */
+			
+			//getElementsByTagName示例
+		/*	var shopping=document.getElementById("purchases");
+			var items1=shopping.getElementsByTagName("*");
+			alert(items1.length);
+			*/
+			
+			//getElementsByClassName示例
+		//	alert(document.getElementsByClassName("important sale").length);
+			
+			//getAttribute（）函数来获取节点的各个属性
+			/*var paras=document.getElementsByTagName("p");
+			for (var i = 0; i < paras.length; i++) {
+				var title_text=paras[i].getAttribute("title");
+				if(title_text) alert(title_text);
+				
+			}*/
+			
+			//setAttribute()可以更改属性节点的值
+			/*var shopping=document.getElementById("purchases");
+			alert(shopping.getAttribute("title"));
+			shopping.setAttribute("title","a list of goods");
+			alert(shopping.getAttribute("title"));
+			*/
+			
+			
+			
+		</script>
+	</body>
+</html>
