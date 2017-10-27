@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>math对象的方法</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			document.write("<h2>[1]最大值:"+Math.max(10,20)+"<br>");
+			document.write("[2]最小值："+Math.min(10,20)+"<br>");
+			document.write("[3]向上取整："+Math.ceil(7.8)+"<br>");
+			document.write("[4]向下取整："+Math.floor(7.8)+"<br>");
+			document.write("[5]绝对值："+Math.abs(-7)+"<br>");
+		</script>
+	</body>
+</html>
