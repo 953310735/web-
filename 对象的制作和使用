@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>对象的制作和使用</title>
+		
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			function student(name, chn, eng, mat){
+				this.name=name;
+				this.chn=chn;
+				this.eng=eng;
+				this.mat=mat;
+			}
+			
+			pg=new student("苹果",80,85,90);
+			xm=new student("小米",70,80,90);
+			
+			document.write("<h2>");
+			document.write("姓名："+pg.name+"<br>");
+			document.write("语文："+pg.chn+"<br>");
+			document.write("英语："+pg.eng+"<br>");
+			document.write("数学："+pg.mat+"<p>");
+			document.write("姓名："+xm.name+"<br>");
+			document.write("语文："+xm.chn+"<br>");
+			document.write("英语："+xm.eng+"<br>");
+			document.write("数学："+xm.mat);
+			document.write("</h2>");
+		</script>
+	</body>
+</html>
