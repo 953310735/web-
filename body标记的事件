@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>body标记的事件</title>
+		<!--
+        	作者：953310735@qq.com
+        	时间：2017-10-30
+        	描述：<body>标记内包含的事件有OnLoad事件和OnUnLoad事件。
+        -->
+			<script type="text/javascript">
+			function msg(sel){
+				if (sel==true) 
+					alert("打开主页");
+				 else
+					alert("关闭主页");
+				
+			}
+		
+			
+		</script>
+	</head>
+	<body onload="msg(true)" onunload="msg(false)" >
+                主页没有内容。	
+	</body>
+</html>
