@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>在对象内设定方法</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function display(){
+				document.write("姓名："+this.name+"<br>");
+				document.write("语文："+this.chn+"<br>");
+				document.write("英语："+this.eng+"<br>");
+				document.write("数学："+this.mat+"<p>");
+			}
+			
+			function student(name, chn, eng, mat){
+				this.name=name;
+				this.chn=chn;
+				this.eng=eng;
+				this.mat=mat;
+				this.dsp=display;
+			}
+			
+			pg=new student("苹果",80,85,90);
+			xm=new student("小米",70,80,90);
+			
+			pg.dsp();
+			xm.dsp();
+			
+			
+			
+			
+		</script>
+	</body>
+</html>
