@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>将对象作为对象属性</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function display(){
+				document.write("姓名："+this.name+"<br>");
+				document.write("语文："+this.score.chn+"<br>");
+				document.write("英语："+this.score.eng+"<br>");
+				document.write("数学："+this.score.mat+"<p>");
+			}
+			
+			function score(chn,eng,mat){
+				this.chn=chn;
+				this.eng=eng;
+				this.mat=mat;
+			}
+			
+			function student(name,score){
+				this.name=name;
+				this.score=score;
+				this.dsp=display;
+			}
+			
+			pg_score=new score(70,80,90);
+			xm_score=new score(78,89,68);
+			
+			pg=new student("苹果",pg_score);
+			xm=new student("小米",xm_score);
+			
+			pg.dsp();
+			xm.dsp();
+			
+			
+			
+		</script>
+	</body>
+</html>
