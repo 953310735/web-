@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>onclick事件</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function btn_click(){
+				alert("你好，世界！");
+			}
+		
+		</script>
+		
+		<input type="button" value="按我一下"  onclick="btn_click()" />
+	</body>
+</html>
