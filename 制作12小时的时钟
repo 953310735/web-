@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>制作12小时的时钟</title>
+	</head>
+	<body onload="disptime()">
+		
+		<script type="text/javascript">
+			function disptime(){
+				var today = new Date();
+				var year=today.getFullYear();
+				var month=today.getMonth();
+				var dates=today.getDate();
+				var hours=today.getHours();
+				var minutes=today.getMinutes();
+				var seconds=today.getSeconds();
+				var day=today.getDay(); 
+				var days;
+				switch (day){
+					case 0:
+						days="日";
+						break;
+					case 1:
+						days="一";
+					break;	
+					case 2:
+						days="二";
+					break;
+					case 3:
+						days="三";
+					break;
+					case 4:
+						days="四";
+					break;
+					case 5:
+						days="五";
+					break;
+					default:
+						days="六"
+					
+				}
+				
+			if(hours>12){
+				document.getElementById("myclock").innerHTML="你好，现在是北京时间：</br>"+year+"年"+month+"月"+dates+"日</br>"+(hours-12)+":"+minutes+":"+seconds+" "+"PM</br>"+"星期"+days;
+			}else{
+				document.getElementById("myclock").innerHTML="你好，现在是北京时间：</br>"+year+"年"+month+"月"+dates+"日</br>"+hours+":"+minutes+"+"+seconds+" "+"AM</br>"+"星期"+days;
+			}
+			var mytime=setTimeout("disptime()",1000);
+			var mytime=setInterval("disptime()",1000);
+			}
+		</script>
+		<div id="myclock">
+			
+		</div>
+	</body>
+</html>
