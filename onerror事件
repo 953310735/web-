@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>onerror事件</title>
+		<!--
+        	作者：953310735@qq.com
+        	时间：2017-10-31
+        	描述：读取html文件时，若发生错误，则使用onerror进行处理。
+        		
+        -->
+	</head>
+	<body>
+		<script type="text/javascript">
+			function err_handler(errormessage,url,line){
+				var str="错误信息："+errormessage+"\n";
+				str+="错误发生的行的位置："+line+"\n";
+				str+="url:"+url;
+				alert(str);
+				
+				return true;
+			}
+			window.onerror = err_handler;
+			
+			
+			
+		</script>
+		
+		<input type="button" value="按钮" onclick="err_handler()" />
+	</body>
+</html>
