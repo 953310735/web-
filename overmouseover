@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>overmouseover</title>
+		<!--
+        	作者：953310735@qq.com
+        	时间：2017-10-31
+        	描述：onmouseover事件会在鼠标指针移动到指定的对象上时发生。
+        -->
+	</head>
+	<body>
+		<script type="text/javascript">
+			function mouseover(){
+				document.getElementById("b1").src="../../img/美女1.jpeg";
+			}
+			function mouseout(){
+				document.getElementById("b1").src="../../img/美女2.jpeg";
+			}
+			
+			
+			
+			
+		</script>
+		<a href="http://www.baidu.com" onmouseover="mouseover()" onmouseout="mouseout()">
+		<img src="../../img/美女2.jpeg"/ id="b1">
+		</a>
+		
+	</body>
+</html>
