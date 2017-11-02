@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>实现一个小型计算器</title>
+	</head>
+	<body>
+		
+			
+		
+			原始数据输入<input type="text"  id="number1"/>
+			<input type="button" value="取整（四舍五入）" onclick="start(1)" />
+			<input type="button" value="取整（大于）" onclick="start(2)" />
+			<input type="button"   value="取整（小于）" onclick="start(3)"/>
+			</br>
+			<input type="button"   value="平方根" onclick="start(4)"/>
+			<input type="button"  value="绝对值" onclick="start(5)"/>
+			<input type="button"  value="自然对数" onclick="start(6)"/>
+			<input type="button"   value="正弦值" onclick="start(7)"/>
+			<input type="button"   value="余弦值" onclick="start(8)"/>
+			<br>
+		 	运算结果<input type="text" id="jieguo1">
+			<hr>	
+			原始数据输入<input type="text" id="number2"/><br>
+			<input type="button"  value="求较小值" onclick="start(9)"/>
+			<input type="button"  value="求较大值" onclick="start(10)"/><br>
+			运算结果<input type="text" id="jieguo2">
+		
+	
+		
+		<script type="text/javascript">
+		
+			function start(zjj){
+				switch (zjj){
+					case 1:
+					document.getElementById("jieguo1").value=Math.ceil(document.getElementById("number1").value);
+					break;
+					case 2:
+					document.getElementById("jieguo1").value=Math.floor(document.getElementById("number1").value)+1;
+						break;
+					case 3:
+					document.getElementById("jieguo1").value=Math.floor(document.getElementById("number1").value);
+						break;
+					case 4:
+					document.getElementById("jieguo1").value=Math.sqrt(document.getElementById("number1").value);
+						break;
+					default:
+						break;
+				}
+				
+			}
+		</script>
+		
+		
+		
+	</body>
+</html>
