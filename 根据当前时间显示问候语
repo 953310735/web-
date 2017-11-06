@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>拓展训练</title>
+		<!--
+        	作者：953310735@qq.com
+        	时间：2017-11-06
+        	描述：根据当前时间显示问候语。
+        -->
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+				
+			var today=new Date();
+			var year=today.getFullYear();
+			var month=today.getMonth();
+			var dates=today.getDate();
+			var hours=today.getHours();
+			var minutes=today.getMinutes();
+			
+			
+			if (13<hours<18) {
+				document.write("下午好！欢迎光临！<br>今天日期："+year+"年"+month+"月"+dates+"日"+"<br>"+"现在时间："+hours+"点"+minutes+"分");
+			} else if (19<hours<23) {
+				document.write("晚上好！欢迎光临！<br>今天日期："+year+"年"+month+"月"+dates+"日"+"<br>"+"现在时间："+hours+"点"+minutes+"分");
+			} else{
+				document.write("早上好！欢迎光临！<br>今天日期："+year+"年"+month+"月"+dates+"日"+"<br>"+"现在时间："+hours+"点"+minutes+"分");
+			}
+			
+				
+			
+		</script>
+	</body>
+</html>
