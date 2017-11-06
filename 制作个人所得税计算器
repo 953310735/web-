@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>拓展训练3</title>
+		<!--
+        	作者：953310735@qq.com
+        	时间：2017-11-06
+        	描述：制作个人所得税计算器。
+        -->
+        <style type="text/css">
+       #tr1{
+       	text-align: center;
+       }
+        </style>
+	</head>
+	<body>
+		<table border="1" cellspacing="0" cellpadding="0">
+			<tr ><th colspan="2">个人所得税计算器</th></tr>
+			<tr><td >请输入你的月收入：</td>
+				<td><input type="text"  id="monpay"  />元</td>
+			</tr>
+			<tr>
+				<td>请输入所得税起征额：</td>
+				<td><input type="text"  id="qizhenge"  />元</td>
+			</tr>
+			<tr>
+				<td>所得税：</td>
+				<td><input type="text"  id="tax"  />元</td>
+			</tr>
+			<tr id="tr1"><td colspan="2">
+				<input type="button" id="calculate" value="计算" onclick="calculates()"/>
+				<input type="reset" value="重填" />
+				
+			</td></tr>
+		</table>
+		
+		
+		<script type="text/javascript">
+			var tax_rate;
+				if(parseInt(document.getElementById("monpay").value)<1000){
+					tax_rate=0;
+				}else if	(1000<parseInt(document.getElementById("monpay").value)<3000){
+					tax_rate=0.1;
+				}else{
+					tax_rate=0.5;
+				}
+			
+			function calculates(){
+				
+ 				
+				var taxs=(parseInt((document.getElementById("monpay").value))-parseInt((document.getElementById("qizhenge").value)))*tax_rate;
+				document.getElementById("tax").value=taxs;
+			}
+		</script>
+		
+		<!--
+        	作者：953310735@qq.com
+        	时间：2017-11-06
+        	描述：reset重建按钮不能正常使用！！！
+        -->
+		
+	
+	</body>
+</html>
