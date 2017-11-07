@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<!--
+    	作者：953310735@qq.com
+    	时间：2017-11-07
+    	描述：
+    		getElementById一般用于访问div，图片，表单元素，网页标签等。
+    	    getElementsByTagName方法是按标签来访问页面元素的，一般用于访问一组相同的元素，例如一组<input>、一组图片等；
+    	    getElementsByName方法一般用于访问一组相同name属性的元素。例如具有相同name属性的单选按钮、复选框
+    -->
+	<head>
+		<meta charset="UTF-8">
+		<title>getElementById（）和getElementsByTagName（）和getElementsByName</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function changelink(){
+				document.getElementById("node").innerHTML="淘宝";
+			}
+			function all_input(){
+				var ainput=document.getElementsByTagName("input");
+				var sstr=" ";
+				for (var i=0;i<ainput.length;i++) {
+					sstr+=ainput[i].value+"<br/>";
+				}
+				document.getElementById("s").innerHTML=sstr;
+			}
+			function s_input () {
+				var ainput=document.getElementsByName("season");
+				var sstr=" ";
+				for (var i=0;i<ainput.length;i++) {
+					sstr+=ainput[i].value+"<br/>";
+				}
+				document.getElementById("s").innerHTML=sstr;
+			}
+		</script>
+		
+		<div id="node">京东</div>
+		<input type="button" name="b1"  value="改变层内容" onclick="changelink();" /><br />
+		<br /><input type="text" name="season" value="春" />		
+			<input type="text" name="season" value="夏" />	
+			<input type="text" name="season" value="秋" />	
+			<input type="text" name="season" value="冬" /><br />
+			<input type="button" name="b2"  value="显示input内容" onclick="all_input();"/>
+			<input type="button" name="b3" value="显示season内容" onclick="s_input()"/>
+			<p id="s">  </p>
+	</body>
+</html>
