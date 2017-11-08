@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>visibility和display属性的特征和区别</title>
+		<style type="text/css">
+			img{
+				width: 100px;
+				height: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function hidden_b2(){
+				document.getElementById("b2").style.visibility="hidden";
+			}
+			function none_b2(){
+				document.getElementById("b2").style.display="none";
+			}
+		</script>
+		<img src="../../img/星空.jpeg" alt="book1" id="b1"/>
+		<img src="../../img/树林.jpeg" alt="book2" id="b2"/>
+		<img src="../../img/美女1.jpeg" alt="book3" id="b3"/><br />
+		<input type="button" name="btn1" id="btn1" value="visibility隐藏图片b2"  onclick="hidden_b2()"/>
+		<input type="button" name="btn2" id="btn2" value="visibility隐藏图片b2" onclick="none_b2()"/>
+	</body>
+</html>
