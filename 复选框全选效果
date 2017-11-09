@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>复选框全选效果</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function check(){
+				var oinput=document.getElementsByName("product");
+				for (var i=0;i<oinput.length;i++) {
+					if(document.getElementById("all").checked==true){
+						oinput[i].checked=true;
+					}
+					else{
+						oinput[i].checked=false;
+					}
+				}
+			}
+			
+			
+		</script>
+		<table border="0" cellspacing="40px" cellpadding="20px" class="bg">
+			
+			<td><input type="checkbox" id="all" value="全选"  onclick="check()"/>全选</td>
+			<td>商品</td>
+			<td>商品名称/出售者/联系方式</td>
+			<td>价格</td>
+			<tr>
+				<td><input type="checkbox" name="product" id="product" value="1" /></td>
+					<td><img src="../../img/macbook.png" width="150px" height="auto"/></td>
+				<td>macbook最新款笔记本电脑<br />
+				出售者：apple <br /></td>
+				<td>一口价<br />
+				5889.0</td>
+			</tr>
+			
+			<tr>
+				<td><input type="checkbox" name="product" id="product" value="2" /></td>
+				<td><img src="../../img/美女2.jpeg" width="150px" height="auto"/></td>
+				<td>不知名美女一枚<br />
+				出售者：是我呀</td>
+				<td>一口价<br />
+				100000.0</td>
+				
+			</tr>
+			
+			
+			
+			
+			
+					
+				
+				</tr>
+		</table>
+	</body>
+</html>
