@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>使用DOM操作增加或删除表格行</title>
+		<script type="text/javascript">
+		function tbadd(){
+			var x=document.getElementById("tb").insertRow(3);
+			var y=x.insertCell(0);
+			var z=x.insertCell(1);
+			y.innerHTML="哈哈";
+			z.innerHTML="¥3";
+		}
+		
+		function tbreduce(){
+			document.getElementById("tb").deleteRow(0);
+		}
+		</script>
+	</head>
+	<body>
+		<table border="1" cellspacing="0" cellpadding="0"  id="tb">
+			<tr><td >书名</td>
+				<td>价格</td>
+				
+			</tr>
+			<tr>
+				<td> 网页工程实训</td>
+				<td>¥30.00</td>
+			</tr>
+			<tr>
+				<td>c语言工程实训</td>
+				<td>¥32.00</td>
+			</tr>
+		</table>
+		<input type="button"  value="增加一行" onclick="tbadd()"/>
+		<input type="button"  value="减少一行" onclick="tbreduce()"/>
+	</body>
+</html>
