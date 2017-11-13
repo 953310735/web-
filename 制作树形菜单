@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>制作树形菜单</title>
+		<script type="text/javascript">
+			function display(x){
+			switch (x){
+				case 1:
+				if (document.getElementById("maijia1").style.display=="none") {
+					document.getElementById("maijia1").style.display="block";
+				} else{
+					document.getElementById("maijia1").style.display="none";
+				}
+			
+					break;
+				default:
+				if (document.getElementById("maijia2").style.display=="none") {
+					document.getElementById("maijia2").style.display="block";
+				} else{
+					document.getElementById("maijia2").style.display="none";
+				}
+			
+					break;
+				}
+				}
+			
+				
+		</script>
+		<style type="text/css">
+			a{
+				text-decoration: none;
+			}
+			ul{
+				list-style: none;
+			}
+		</style>
+		
+	</head>
+	<body>
+		注册&认证
+		<br />
+		<div >
+			
+		
+		<a href="javascript:onclick=display(1)">买家帮助</a>
+		<ul id="maijia1">
+			<li>1、宝贝搜索、浏览</li>
+			<li>2、了解卖家</li>
+			<li>3、出价及付款</li>
+		</ul>
+		</div>
+		<div >
+			
+		
+		<a href="javascript:onclick=display(2)">卖家帮助</a>
+		<ul id="maijia2">
+			<li>个人资料修改</li>
+		</ul>
+		</div>
+	</body>
+</html>
