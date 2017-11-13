@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>带按钮的轮换横幅广告</title>
+	</head>
+	<body onload="play()">
+		<script type="text/javascript">
+			function imgarray(len)
+			{
+				this.length=len;
+			}
+			imgname=new imgarray(5);
+			imgname[0]="../../img/macbook.png";
+			imgname[1]="../../img/星空.jpeg";
+			imgname[2]="../../img/树林.jpeg";
+			imgname[3]="../../img/美女1.jpeg";
+			
+			var i=-1;
+			function play(){
+				if (i==3) {
+					i=0;
+				} else{
+					i++;
+				}
+			myimg.src=imgname[i];
+			mytimeout=setTimeout("play()",2000);}
+			
+			function change(x){
+				switch (x){
+					case 0:
+					myimg.src=imgname[0];
+						break;
+					case 1:
+					myimg.src=imgname[1];
+						break;
+					case 2:
+					myimg.src=imgname[2];
+						break;
+					default:
+					myimg.src=imgname[3];
+						break;
+				}
+			}
+			
+		</script>
+		<table border="0" cellspacing="5px" cellpadding="10px" width="100px" height="10px" >
+			
+			<tr><td><img src="../../img/macbook.png" id="myimg"  width="100px" height="100px"/></td></tr>
+			
+			
+			</tr>
+		</table>
+			<a href="javascript:onclick=change(0)">1</a>
+			<a href="javascript:onclick=change(1)">2</a>
+			<a href="javascript:onclick=change(2)">3</a>
+			<a href="javascript:onclick=change(3)">4</a>
+	</body>
+</html>
