@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--
+        	作者：953310735@qq.com
+        	时间：2017-11-14
+        	描述：该方法的作用是将数组中的所有元素连接为一个字符串。
+        -->
+		<title>join方法</title>
+		<script type="text/javascript">
+			var str1="this is a test";
+			var arr=str1.split(" ");
+			var str2=arr.join(",");
+			with (document){
+				write(str1);
+				write("<br>分割为数组，数组长度"+arr.length+"，重新连接如下：<br>");
+				write(str2);
+				
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
