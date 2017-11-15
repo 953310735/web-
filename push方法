@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--
+        	作者：953310735@qq.com
+        	时间：2017-11-14
+        	描述：该方法可以将所指定的一个或多个数据添加到数组中，该方法的返回值为添加到数组的长度
+        -->
+		<title>push方法</title>
+		<script type="text/javascript">
+			var arr=new Array();
+			document.write("向数组中写入数据：");//单个数据写入数组
+			for (var i=1;i<=5;i++) {
+				var data=arr.push(Math.ceil(Math.random()*10));
+				document.write(data);
+				document.write("个，");
+			}
+			document.write("<br>");//批量写入数组
+			var data=arr.push("a",4.15,"hello");
+			document.write("批量写入，数组长度已为"+data+"<br>");
+			var newarr=new Array(1,2,3,4,5);		
+			document.write("向数组中写入另一个数组<br>");//写入新数组
+			arr.push(newarr);
+			document.write("全部数组如下：<br>");
+			document.write(arr.join(","));
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
