@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--
+        	作者：953310735@qq.com
+        	时间：2017-11-15
+        	描述：该方法对数组中的所有元素按unicode编码进行排序，并返回经过排序后的数组
+        	sort方法默认按升序进行排列，但也可以通过指定对比函数来实现特殊的排序要求
+        -->
+		<title>sort方法</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var arr=new Array(1,6,3,53,"a","b","c","A","B");
+			writearr("排序前",arr);
+			writearr("升序排列",arr.sort());
+			writearr("降序排列，字母不分大小写",arr.sort(desc));
+			writearr("严格降序排列",arr.sort(desc1));
+			
+			
+			
+			
+			//自定义函数输出提示信息和数组元素
+			function writearr(str,array){
+				document.write(str+":");
+				document.write(array.join(","));
+				document.write("<br>");
+				
+			}
+			
+			//按降序排列，字母不区分大小写
+			function desc(a,b){
+				var a=new String(a);
+				var b=new String(b);
+				//如果a大于b,则返回-1，所以a排在前b排在后
+				return -1*a.localeCompare(b);
+			}
+			
+			//严格降序
+			function desc1(a,b){
+				var stra=new String(a);
+				var strb=new String(b);
+				var ai=stra.charCodeAt(0);
+				var bi=strb.charCodeAt(0);
+				if (ai>bi) {
+					return -1;
+				} else{
+					return 1;
+				}
+			}
+		</script>
+	</body>
+</html>
