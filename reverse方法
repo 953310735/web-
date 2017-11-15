@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--
+        	作者：953310735@qq.com
+        	时间：2017-11-14
+        	描述：该方法可以将所制定的一个或多个数据添加到数组中，该方法的返回值为添加新数据后数组的长度。
+        -->
+		<title>reverse方法</title>
+		<script type="text/javascript">
+			var arr=new Array(1,2,3,4,5,6);
+			with (document){
+				write("数组为：");
+				write(arr.join(","));
+				arr.reverse();
+				write("<br>反序后的数组为：");
+				write(arr.join("-"));
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
