@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--
+        	作者：953310735@qq.com
+        	时间：2017-11-15
+        	描述：该方法可以指定起始索引和数据个数的方式，删除或替换数组中的部分数据，该方法的返回值
+        	为被删除或替换掉的数据。
+        -->
+		<title>splice方法</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//自定义函数输出提示信息和数组元素
+			function writearr(str,array){
+				document.write(str+":");
+				document.write(array.join(","));
+				document.write("<br>");
+				
+			}
+			
+			var arr=new Array(0,1,2,3,4,5,6,7,8,9,10);
+			var rewith=new Array("a","b","c");
+			var tmp1=arr.splice(2,5,rewith);
+			with(document){
+				writearr("替换了5个数据",tmp1);
+				writearr("替换为",rewith);
+				writearr("替换后",arr);
+				var tmp2=arr.splice(5,2);
+				writearr("删除两个数据",tmp2);
+				writearr("替换后",arr);
+			}
+			
+			
+			
+		</script>
+	</body>
+</html>
